@@ -239,6 +239,7 @@ int main (int argc, char * const argv[]) {
 //    insertPatternInGridAtCoords(UEXPAND,grid,5,16);
 //    insertPatternInGridAtCoords(UEXPAND,grid,24,24);
 //    insertPatternInGridAtCoords(BOAT,grid,20,2);
+    
     insertPatternInGridAtCoords(RANDOM_PATTERN,grid,13,13);
     
     printLifeGrid(grid);
