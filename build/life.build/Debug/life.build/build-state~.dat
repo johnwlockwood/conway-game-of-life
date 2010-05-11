@@ -1,0 +1,59 @@
+Tlife
+v7
+r0
+t295159371.823777
+cCheck dependencies
+cCompileC build/life.build/Debug/life.build/Objects-normal/x86_64/main.o /Users/johnlockwood/Documents/Programming/life/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cLd /Users/johnlockwood/Documents/Programming/life/build/Debug/life normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004BBF17B200000000000000EE
+t1270814642
+s238
+
+N/Users/johnlockwood/Documents/Programming/life/build/Debug/life
+t1273466571
+s10576
+
+N/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/life.LinkFileList
+c000000004BE78ECA000000000000006E
+t1273466570
+s110
+
+N/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/main.o
+t1273466571
+s66992
+
+N/Users/johnlockwood/Documents/Programming/life/main.cpp
+c000000004BE78E2A000000000000008F
+t1273466410
+s143
+i<iostream>
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies295159370#295159370#0(0"0(0#1#0"8245940720249172992#0"0#
+
+CCompileC build/life.build/Debug/life.build/Objects-normal/x86_64/main.o /Users/johnlockwood/Documents/Programming/life/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s295159370.933240
+e295159371.451792
+r1
+xCompileC
+xbuild/life.build/Debug/life.build/Objects-normal/x86_64/main.o
+x/Users/johnlockwood/Documents/Programming/life/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/johnlockwood/Documents/Programming/life/main.cpp295159370#295159371#0(0"0(0#0#55"/Users/johnlockwood/Documents/Programming/life/main.cpp3917909816998063104#1325"    cd /Users/johnlockwood/Documents/Programming/life    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-generated-files.hmap -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-own-target-headers.hmap -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-all-target-headers.hmap -iquote /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-project-headers.hmap -F/Users/johnlockwood/Documents/Programming/life/build/Debug -I/Users/johnlockwood/Documents/Programming/life/build/Debug/include -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/DerivedSources/x86_64 -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/DerivedSources -c /Users/johnlockwood/Documents/Programming/life/main.cpp -o /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/main.o0#
+
+CLd /Users/johnlockwood/Documents/Programming/life/build/Debug/life normal x86_64
+s295159371.451877
+e295159371.823741
+r1
+xLd
+x/Users/johnlockwood/Documents/Programming/life/build/Debug/life
+xnormal
+xx86_64
+lSLF07#2@68"Link /Users/johnlockwood/Documents/Programming/life/build/Debug/life295159371#295159371#0(0"0(0#0#0"32370120545140836#526"    cd /Users/johnlockwood/Documents/Programming/life    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/johnlockwood/Documents/Programming/life/build/Debug -F/Users/johnlockwood/Documents/Programming/life/build/Debug -filelist /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/life.LinkFileList -mmacosx-version-min=10.6 -o /Users/johnlockwood/Documents/Programming/life/build/Debug/life0#
+

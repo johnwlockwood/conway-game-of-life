@@ -1,0 +1,98 @@
+Tlife
+v7
+r0
+t295244656.187049
+cCheck dependencies
+cCompileC build/life.build/Debug/life.build/Objects-normal/x86_64/main.o /Users/johnlockwood/Documents/Programming/conway-game-of-life/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cLd /Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug/life normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004BBF17B200000000000000EE
+t1270814642
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/time.h
+c000000004AC59C82000000000000178E
+t1254464642
+s6030
+
+N/Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug/life
+t1273551856
+s16720
+
+N/Users/johnlockwood/Documents/Programming/conway-game-of-life/build/life.build/Debug/life.build/Objects-normal/x86_64/life.LinkFileList
+c000000004BE8DBF0000000000000007D
+t1273551856
+s125
+
+N/Users/johnlockwood/Documents/Programming/conway-game-of-life/build/life.build/Debug/life.build/Objects-normal/x86_64/main.o
+t1273550708
+s76140
+
+N/Users/johnlockwood/Documents/Programming/conway-game-of-life/main.cpp
+c000000004BE8D7740000000000001A8B
+t1273550708
+s6795
+i<iostream>
+i<time.h>
+
+N/Users/johnlockwood/Documents/Programming/life/build/Debug/life
+t1273550711
+s16704
+
+N/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/life.LinkFileList
+c000000004BE78ECA000000000000006E
+t1273466570
+s110
+
+N/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/main.o
+t1273550708
+s76140
+
+N/Users/johnlockwood/Documents/Programming/life/main.cpp
+c000000004BE8D7740000000000001A8B
+t1273550708
+s6795
+i<iostream>
+i<time.h>
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies295244656#295244656#0(0"0(0#1#0"8245940720249172992#0"0#
+
+CCompileC build/life.build/Debug/life.build/Objects-normal/x86_64/main.o /Users/johnlockwood/Documents/Programming/conway-game-of-life/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/life.build/Debug/life.build/Objects-normal/x86_64/main.o /Users/johnlockwood/Documents/Programming/life/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s295243511.612932
+e295243511.613693
+r1
+xCompileC
+xbuild/life.build/Debug/life.build/Objects-normal/x86_64/main.o
+x/Users/johnlockwood/Documents/Programming/life/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/johnlockwood/Documents/Programming/life/main.cpp295243511#295243511#0(0"0(0#0#55"/Users/johnlockwood/Documents/Programming/life/main.cpp4300725088#1325"    cd /Users/johnlockwood/Documents/Programming/life    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-generated-files.hmap -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-own-target-headers.hmap -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-all-target-headers.hmap -iquote /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/life-project-headers.hmap -F/Users/johnlockwood/Documents/Programming/life/build/Debug -I/Users/johnlockwood/Documents/Programming/life/build/Debug/include -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/DerivedSources/x86_64 -I/Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/DerivedSources -c /Users/johnlockwood/Documents/Programming/life/main.cpp -o /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/main.o0#
+
+CLd /Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug/life normal x86_64
+s295244656.161201
+e295244656.186996
+r1
+xLd
+x/Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug/life
+xnormal
+xx86_64
+lSLF07#2@83"Link /Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug/life295244656#295244656#0(0"0(0#0#0"28429410741321836#601"    cd /Users/johnlockwood/Documents/Programming/conway-game-of-life    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug -F/Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug -filelist /Users/johnlockwood/Documents/Programming/conway-game-of-life/build/life.build/Debug/life.build/Objects-normal/x86_64/life.LinkFileList -mmacosx-version-min=10.6 -o /Users/johnlockwood/Documents/Programming/conway-game-of-life/build/Debug/life0#
+
+CLd /Users/johnlockwood/Documents/Programming/life/build/Debug/life normal x86_64
+s295243511.613737
+e295243511.632877
+r1
+xLd
+x/Users/johnlockwood/Documents/Programming/life/build/Debug/life
+xnormal
+xx86_64
+lSLF07#2@68"Link /Users/johnlockwood/Documents/Programming/life/build/Debug/life295243511#295243511#0(0"0(0#0#0"4300725088#526"    cd /Users/johnlockwood/Documents/Programming/life    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/johnlockwood/Documents/Programming/life/build/Debug -F/Users/johnlockwood/Documents/Programming/life/build/Debug -filelist /Users/johnlockwood/Documents/Programming/life/build/life.build/Debug/life.build/Objects-normal/x86_64/life.LinkFileList -mmacosx-version-min=10.6 -o /Users/johnlockwood/Documents/Programming/life/build/Debug/life0#
+
