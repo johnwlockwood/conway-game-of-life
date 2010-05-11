@@ -1,5 +1,6 @@
 #include <iostream>
 #include <time.h>
+#include <stdlib.h>
 
 const int GRID_SIZE = 25;
 const int DEAD = 0;
@@ -90,6 +91,22 @@ void copyGrid(int grid[GRID_SIZE][GRID_SIZE],  int gridCopy[GRID_SIZE][GRID_SIZE
     } 
 }
 
+float randomFloat(float min, float max)
+{
+	float r = (float)rand() / (float)RAND_MAX;
+	return min + r * (max - min);
+}
+
+int randomLife()
+{
+    int cellState = DEAD;
+    float state = randomFloat(0.0f,1.0f);
+    if (state > 0.5f) {
+        cellState = LIVE;
+    }
+    return cellState;
+}
+
 void stepGrid( int grid[GRID_SIZE][GRID_SIZE],  int lastGrid[GRID_SIZE][GRID_SIZE])
 {
     //makeDeadGrid(lastGrid);
@@ -119,7 +136,7 @@ void stepGrid( int grid[GRID_SIZE][GRID_SIZE],  int lastGrid[GRID_SIZE][GRID_SIZ
 }
 
 // output array with two rows and three columns
-void printArrayF( const int a[][ 3 ] )          
+void printPattern( const int a[][ 3 ] )          
 {                                              
     // loop through array's rows                
     for ( int i = 0; i < 3; i++ )               
@@ -153,6 +170,15 @@ void printLifeGrid( int a[][GRID_SIZE])
     } // end outer for                          
 } // end function printArray
 
+void makePatternRandom(int pattern[3][3])
+{
+    for (int i=0; i<PATTERN_SIZE; i++) {
+        for (int j=0; j<PATTERN_SIZE; j++) {
+            pattern[i][j] = randomLife();
+        }
+    }
+}
+
 
 int main (int argc, char * const argv[]) {
     clock_t lastTime;
@@ -160,18 +186,9 @@ int main (int argc, char * const argv[]) {
     clock_t totalTime;
     
     
+    srand((unsigned)time(0));
+    
 
-    
-    
-    
-//    const int patternSize = 3;
-    
-//    int liveRow[patternSize] = {LIVE,LIVE,LIVE};
-//    int dllRow[patternSize] = {DEAD,LIVE,LIVE};
-//    int lldRow[patternSize] = {LIVE,LIVE,DEAD};
-//    int deadRow[patternSize] = {DEAD,DEAD,DEAD};
-//    int ldlRow[patternSize] = {LIVE,DEAD,LIVE};
-//    int dldRow[patternSize] = {DEAD,LIVE,DEAD};
     
     int BLINKER[3][3] = {
         {DEAD,DEAD,DEAD},
@@ -180,9 +197,11 @@ int main (int argc, char * const argv[]) {
     };
     
     
-//    int BOAT[3][3] = {*lldRow,
-//       *ldlRow,
-//       *dldRow };
+    int BOAT[3][3] = {
+        {LIVE,LIVE,DEAD},
+        {LIVE,DEAD,LIVE},
+        {DEAD,LIVE,DEAD}
+    };
     
     int UEXPAND[3][3] = {
         {LIVE,DEAD,LIVE},
@@ -195,11 +214,17 @@ int main (int argc, char * const argv[]) {
         {LIVE,LIVE,DEAD}
     };
     
+    int RANDOM_PATTERN[3][3] = {
+        {randomLife(),randomLife(),randomLife()},
+        {randomLife(),randomLife(),randomLife()},
+        {randomLife(),randomLife(),randomLife()}
+    };
+    
 
     lastTime = clock ();
     std::cout << "Hello, World!\n" <<  lastTime << std::endl;
     
-    //printArrayF(BOAT);
+    printPattern(RANDOM_PATTERN);
     int grid[GRID_SIZE][GRID_SIZE];
     int lastGrid[GRID_SIZE][GRID_SIZE];
     
@@ -209,10 +234,12 @@ int main (int argc, char * const argv[]) {
     int count = neighborCount(0,0,grid);
     std::cout << "neighbor count is: " << count << std::endl;
     
-    insertPatternInGridAtCoords(BLINKER,grid,4,10);
-    insertPatternInGridAtCoords(GLIDER,grid,10,10);
-    insertPatternInGridAtCoords(UEXPAND,grid,5,16);
-    insertPatternInGridAtCoords(UEXPAND,grid,24,24);
+//    insertPatternInGridAtCoords(BLINKER,grid,4,10);
+//    insertPatternInGridAtCoords(GLIDER,grid,10,10);
+//    insertPatternInGridAtCoords(UEXPAND,grid,5,16);
+//    insertPatternInGridAtCoords(UEXPAND,grid,24,24);
+//    insertPatternInGridAtCoords(BOAT,grid,20,2);
+    insertPatternInGridAtCoords(RANDOM_PATTERN,grid,13,13);
     
     printLifeGrid(grid);
     
@@ -237,6 +264,10 @@ int main (int argc, char * const argv[]) {
             std::cout << "game  " << deltaTime << " " << elapsedSeconds << std::endl;
         }
         sinceTick += elapsedSeconds;
+        if (totalTicks%15 == 0) {
+            makePatternRandom(RANDOM_PATTERN);
+            insertPatternInGridAtCoords(RANDOM_PATTERN,grid,13+totalTicks,13+totalTicks);
+        }
         
         if (totalTicks > 300) {
             gameRunning=false;
